@@ -32,12 +32,12 @@ html, body {
     display: block;
 }
 
-/* Hero Image (Adjusted Size) */
+/* Hero Image */
 .hero-img {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Ensuring the image is the same size as the others */
-    object-fit: cover; /* Keeps aspect ratio while ensuring consistent size */
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -148,4 +148,16 @@ footer {
     max-width: 600px;
     display: block;
     margin: 0 auto;
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

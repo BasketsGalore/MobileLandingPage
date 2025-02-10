@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let fadeElements = document.querySelectorAll(".hero, .split-section, .video-section, .review-section, footer");
+    let fadeElements = document.querySelectorAll(".fade-in");
 
-    function fadeInOnScroll() {
-        fadeElements.forEach((element) => {
-            let elementPosition = element.getBoundingClientRect().top;
-            let screenHeight = window.innerHeight;
-
-            if (elementPosition < screenHeight - 50) {
-                element.classList.add("visible");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Stop observing once faded in
             }
         });
-    }
+    }, { threshold: 0.15 }); // Adjusted threshold to ensure detection
 
-    window.addEventListener("scroll", fadeInOnScroll);
-    fadeInOnScroll(); // Run on page load in case elements are already in view
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    console.log("Fade-in elements observed:", fadeElements.length); // Debugging check
 });
