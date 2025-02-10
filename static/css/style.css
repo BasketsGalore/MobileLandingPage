@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Prevent zooming */
@@ -32,44 +32,85 @@ html, body {
     display: block;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 0;
+/* Hero Image (Adjusted Size) */
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Ensuring the image is the same size as the others */
+    object-fit: cover; /* Keeps aspect ratio while ensuring consistent size */
+    border-radius: 8px;
+}
+
+/* Image Container */
+.image-container {
     position: relative;
 }
 
-/* Hero Image */
-.hero-img {
+/* Images */
+.media-img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Hero Title */
-.hero-title {
+/* Videos */
+.media-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Overlay Text */
+.media-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
-    font-weight: bold;
     color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Shipping Prices on Warehouse Image */
+.shipping-prices-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* AI Section */
 .ai-section {
-    background-color: #6f7c3e;
-    padding: 20px;
+    background: linear-gradient(135deg, #6f7c3e, #5b682f);
+    padding: 25px;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    border: 3px solid white;
 }
 
-/* AI Title */
+/* AI Title with Gold Underline */
 .ai-title {
     font-size: 24px;
     color: white;
     font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.ai-title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #d4af37; /* Gold color */
+    margin: 8px auto 0;
+    border-radius: 3px;
 }
 
 /* AI Gallery */
@@ -92,77 +133,6 @@ html, body {
     color: white;
     font-weight: bold;
     margin-top: 5px;
-}
-
-/* Buy Direct Section */
-.buy-direct-wrapper {
-    position: relative;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Buy Direct Video */
-.buy-direct-video {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Buy Direct Text */
-.buy-direct-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Video Gallery */
-.video-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-}
-
-/* Video Thumbnails */
-.video-thumbnail {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-    position: relative;
-}
-
-/* Shipping Prices on Warehouse Image */
-.video-thumbnail-container {
-    position: relative;
-}
-
-.shipping-prices {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Video Overlay */
-.video-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Footer */

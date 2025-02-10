@@ -20,8 +20,10 @@
 
     <!-- HERO SECTION -->
     <section class="hero fade-in">
-        <img src="{{ url_for('static', filename='images/1.- Promojpg.jpg') }}" alt="Promo Image" class="hero-img">
-        <h1 class="hero-title">Yes, we're the greatest gift basket company in the world</h1>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/1.- Promojpg.jpg') }}" alt="Promo Image" class="hero-img">
+            <h1 class="media-text">Yes, we're the greatest gift basket company in the world</h1>
+        </div>
     </section>
 
     <!-- MICHAELA AI ASSISTANT -->
@@ -32,35 +34,41 @@
             <img src="{{ url_for('static', filename='images/IMG_8738.JPEG') }}" alt="Michaela 2" class="ai-img">
             <img src="{{ url_for('static', filename='images/IMG_8740.JPEG') }}" alt="Michaela 3" class="ai-img">
         </div>
-        <p class="chat-now">Chat Now</p>
+        <p class="chat-now"><span class="chat-icon">💬</span> Chat Now</p>
     </section>
 
-    <!-- BUY DIRECT SECTION -->
+    <!-- BUY DIRECT VIDEO -->
     <section class="buy-direct-section fade-in">
-        <div class="buy-direct-wrapper">
-            <video class="buy-direct-video" autoplay loop muted>
+        <div class="image-container">
+            <video class="media-video" autoplay loop muted>
                 <source src="{{ url_for('static', filename='videos/product cropped.mp4') }}" type="video/mp4">
             </video>
-            <h2 class="buy-direct-text">Buy Direct</h2>
+            <h2 class="media-text">Buy Direct</h2>
         </div>
     </section>
 
-    <!-- IMAGE GALLERY -->
+    <!-- ABOUT US IMAGE -->
+    <section class="about-us fade-in">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/2 About Us.jpg') }}" alt="About Us" class="media-img">
+            <h2 class="media-text">Gift for Life's Occasions</h2>
+        </div>
+    </section>
+
+    <!-- WAREHOUSE IMAGE (Shipping Prices) -->
     <section class="video-gallery">
-        <div class="video-thumbnail-container">
-            <img src="{{ url_for('static', filename='images/2 About Us.jpg') }}" alt="About Us" class="video-thumbnail">
-            <h2 class="video-overlay">Gift for Life's Occasions</h2>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/3 - Warehouse.jpg') }}" alt="Warehouse" class="media-img">
+            <p class="shipping-prices-text">UK £9.99 | IRE £7.99 | EU £9.99</p>
         </div>
-        <div class="video-thumbnail-container">
-            <img src="{{ url_for('static', filename='images/3 - Warehouse.jpg') }}" alt="Warehouse" class="video-thumbnail">
-            <div class="shipping-prices">
-                <p>UK £9.99</p>
-                <p>IRE £7.99</p>
-                <p>EU £9.99</p>
-            </div>
+
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/4 - Delivery _ Happiness.jpg') }}" alt="Delivery & Happiness" class="media-img">
         </div>
-        <img src="{{ url_for('static', filename='images/4 - Delivery _ Happiness.jpg') }}" alt="Delivery & Happiness" class="video-thumbnail">
-        <img src="{{ url_for('static', filename='images/5 - Production.jpg') }}" alt="Production" class="video-thumbnail">
+
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/5 - Production.jpg') }}" alt="Production" class="media-img">
+        </div>
     </section>
 
     <!-- REVIEW.IO SCORE SECTION -->

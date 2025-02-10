@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Baskets Galore - Media</title>
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to Media CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css') }}">
+</head>
+<body>
+
+    <!-- IMAGE & VIDEO CONTAINER -->
+    <section class="media-container">
+
+        <!-- HERO IMAGE -->
+        <div class="image-wrapper">
+            <img src="{{ url_for('static', filename='images/1.- Promojpg.jpg') }}" alt="Promo Image" class="media-img">
+            <h1 class="media-text">Yes, we're the greatest gift basket company in the world</h1>
+        </div>
+
+        <!-- BUY DIRECT VIDEO -->
+        <div class="image-wrapper">
+            <video class="media-video" autoplay loop muted>
+                <source src="{{ url_for('static', filename='videos/product cropped.mp4') }}" type="video/mp4">
+            </video>
+            <h2 class="media-text">Buy Direct</h2>
+        </div>
+
+        <!-- ABOUT US IMAGE -->
+        <div class="image-wrapper">
+            <img src="{{ url_for('static', filename='images/2 About Us.jpg') }}" alt="About Us" class="media-img">
+            <h2 class="media-text">Gift for Life's Occasions</h2>
+        </div>
+
+        <!-- WAREHOUSE IMAGE (Shipping Prices) -->
+        <div class="image-wrapper">
+            <img src="{{ url_for('static', filename='images/3 - Warehouse.jpg') }}" alt="Warehouse" class="media-img">
+            <p class="shipping-prices-text">UK £9.99 | IRE £7.99 | EU £9.99</p>
+        </div>
+
+        <!-- OTHER IMAGES -->
+        <div class="image-wrapper">
+            <img src="{{ url_for('static', filename='images/4 - Delivery _ Happiness.jpg') }}" alt="Delivery & Happiness" class="media-img">
+        </div>
+
+        <div class="image-wrapper">
+            <img src="{{ url_for('static', filename='images/5 - Production.jpg') }}" alt="Production" class="media-img">
+        </div>
+
+    </section>
+
+</body>
+</html>
