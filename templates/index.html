@@ -21,7 +21,7 @@
     <!-- HERO SECTION -->
     <section class="hero fade-in">
         <div class="image-container">
-            <img src="{{ url_for('static', filename='images/1.- Promojpg.jpg') }}" alt="Promo Image" class="hero-img">
+            <img src="{{ url_for('static', filename='images/1.- Promojpg.jpg') }}" alt="Promo Image" class="hero-img full-width">
             <h1 class="media-text">Yes, we're the greatest gift basket company in the world</h1>
         </div>
     </section>
@@ -40,7 +40,7 @@
     <!-- BUY DIRECT VIDEO -->
     <section class="buy-direct-section fade-in">
         <div class="image-container">
-            <video class="media-video" autoplay loop muted>
+            <video class="media-video full-width" autoplay loop muted>
                 <source src="{{ url_for('static', filename='videos/product cropped.mp4') }}" type="video/mp4">
             </video>
             <h2 class="media-text">Buy Direct</h2>
@@ -50,7 +50,7 @@
     <!-- ABOUT US IMAGE -->
     <section class="about-us fade-in">
         <div class="image-container">
-            <img src="{{ url_for('static', filename='images/2 About Us.jpg') }}" alt="About Us" class="media-img">
+            <img src="{{ url_for('static', filename='images/2 About Us.jpg') }}" alt="About Us" class="media-img full-width">
             <h2 class="media-text">Gift for Life's Occasions</h2>
         </div>
     </section>
@@ -58,16 +58,18 @@
     <!-- WAREHOUSE IMAGE (Shipping Prices) -->
     <section class="video-gallery">
         <div class="image-container fade-in">
-            <img src="{{ url_for('static', filename='images/3 - Warehouse.jpg') }}" alt="Warehouse" class="media-img">
+            <img src="{{ url_for('static', filename='images/3 - Warehouse.jpg') }}" alt="Warehouse" class="media-img full-width">
             <p class="shipping-prices-text">UK £9.99 | IRE £7.99 | EU £9.99</p>
         </div>
     
         <div class="image-container fade-in">
-            <img src="{{ url_for('static', filename='images/4 - Delivery _ Happiness.jpg') }}" alt="Delivery & Happiness" class="media-img">
+            <img src="{{ url_for('static', filename='images/4 - Delivery _ Happiness.jpg') }}" alt="Delivery & Happiness" class="media-img full-width">
+            <h2 class="media-text bottom-left">Bringing Smiles, One Basket at a Time</h2>
         </div>
     
         <div class="image-container fade-in">
-            <img src="{{ url_for('static', filename='images/5 - Production.jpg') }}" alt="Production" class="media-img">
+            <img src="{{ url_for('static', filename='images/5 - Production.jpg') }}" alt="Production" class="media-img full-width">
+            <h2 class="media-text bottom-left">Every Gift, Packed to Perfection</h2>
         </div>
     </section>
 

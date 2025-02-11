@@ -25,18 +25,12 @@ body {
     width: 100%;
 }
 
-/* Images */
-.media-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Videos */
+/* Full Width Images and Videos */
+.media-img,
 .media-video {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0; /* Removes rounded edges */
 }
 
 /* Overlay Text */
