@@ -64,9 +64,9 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* AI Section - This section remains unchanged */
+/* === Updated AI (Michaela) Section === */
 .ai-section {
-    background: linear-gradient(135deg, #6f7c3e, #5b682f);
+    background: linear-gradient(135deg, #AD1C3A, #AD1C3A);
     padding: 25px;
     text-align: center;
     border-radius: 10px;
@@ -75,13 +75,14 @@ body {
     border: 3px solid white;
 }
 
-/* AI Title with Gold Underline */
+/* Updated Title: Hi I'm Michaela */
 .ai-title {
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     font-weight: bold;
     position: relative;
-    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .ai-title::after {
@@ -98,18 +99,26 @@ body {
 .ai-gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
-/* AI Images */
+/* Michaela Image Container */
+.ai-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Rounded Square AI Images */
 .ai-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border-radius: 12px; /* Rounded square */
+    object-fit: cover;
 }
 
-/* Chat Now */
-.chat-now {
+/* AI Text Below Each Image */
+.ai-text {
     font-size: 14px;
     color: white;
     font-weight: bold;
@@ -141,4 +150,31 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Buttons - Full Width with Larger Edge Gaps */
+.custom-btn {
+    display: block; /* Makes button span full width */
+    width: calc(100% - 60px); /* Increases gap to 30px on each side */
+    max-width: 580px; /* Prevents excessive width on large screens */
+    background: #AD1C3A;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 20px auto; /* Adds more space around buttons */
+    text-align: center;
+    border-radius: 12px; /* Keeps rounded edges */
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover Effect for 3D Look */
+.custom-btn:hover {
+    background: #8C182F;
+    box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
